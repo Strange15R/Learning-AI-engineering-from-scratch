@@ -1,0 +1,87 @@
+Assignment done by:  
+Md Raihanul Islam Bhuiyan
+
+
+#Q1. Simple Calculator Program
+a = 0
+b = 0
+a = input("Enter your first number: ")
+b = input("Enter your second number: ")
+a = float(a)
+b = float(b)
+
+#Necessary in order to not crash the programm.
+if a == 0:
+  print("Please enter a non-zero value.")
+elif b == 0:
+  print("Please enter a non-zero value.")
+else:
+
+  #Addition:
+  c = a+b
+  print("Addition result: ", c)
+
+  #Subtraction:
+  c = a-b
+  print("Subtraction result: ", c)
+
+  #Multiplication:
+  c = a*b
+  print("Multiplication result: ", c)
+
+  #Division:
+  c = a/b
+  print("Division result: ", c)
+
+
+
+
+
+#Q2. User Introduction Program
+#Take the information
+name  = input("Enter your name: ")
+city  = input("Enter your city: ")
+hobby = input("Enter your favourite hobby: ")
+
+#Compile the information in a sentence.
+print (f"Hello {name}! You live in {city} and you enjoy {hobby}.")
+
+
+
+
+
+#Q3. Temperature Converter
+temp = input("Type the temperature in celcius: ")    #Collect the temperature.
+C    = float(temp)
+
+F = (C * 9/5) + 32                                   #Calculte to convert in fahrenheit.
+print(f"The temperature in Fahrenheit is: {F}°F")
+
+
+
+
+#Q4. Billing Program
+#Gather necessary info.
+name     = input("Item name: ")
+price    = input("Price: ")
+quantity = input("Quantity: ")
+
+Total    = int(price) * int(quantity)     #Calculate the total price.
+
+print(f"Total Bill for {name} is {Total} taka.")
+
+
+
+
+#Q5. Student Information Card
+Name = input("What is your name: ")                 #Take necessary inputs.
+Class = input("Which class do you read in: ")
+Section = input("What section are you in:")
+School = input("What is the name of your school: ")
+
+
+#Print in an orderly manner to organize the information.
+print(f"-----STUDENT ID CARD-----\nName   : {Name}\nClass  : {Class}\nSection: {Section}\nSchool : {School}")
+
+
+
